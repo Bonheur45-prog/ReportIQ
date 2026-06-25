@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.production
+.env.development
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime
+.DS_Store
+Thumbs.db
+
+# Credentials — NEVER commit these
+credentials.json
+token.json
+*.pem
+*.key
+
+# IDE
+.vscode/
+.idea/
+
+# Temp files
+tmp/
+temp/
