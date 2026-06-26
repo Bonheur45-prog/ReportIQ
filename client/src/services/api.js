@@ -2,10 +2,14 @@ import axios from 'axios';
  
 // In development: Vite proxy forwards /api to localhost:5000
 // In production: VITE_API_URL points to the Render server
+/*const baseURL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : '/api';*/
+
 const baseURL = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL}/api`
-  : '/api';
-
+  : 'https://reportiq-api.onrender.com/api';
+  
 const api = axios.create({
   baseURL: '/api',
   timeout: 60000,
