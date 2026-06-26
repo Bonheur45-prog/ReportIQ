@@ -1,0 +1,99 @@
+.sidebar {
+  width: var(--sidebar-w);
+  min-height: 100vh;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.logoIcon { font-size: 24px; }
+.logoName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+.logoSub { font-size: 11px; color: rgba(255,255,255,0.5); }
+
+/* Company badge */
+.companyBadge {
+  margin: 16px 12px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.08);
+  border-radius: var(--radius-sm);
+}
+.companyName { font-size: 13px; font-weight: 600; color: #fff; }
+.companyPlan {
+  font-size: 11px;
+  color: var(--gold);
+  text-transform: capitalize;
+  margin-top: 2px;
+}
+
+/* Nav */
+.nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  gap: 2px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.65);
+  transition: all 0.15s;
+}
+.navLink:hover      { background: rgba(255,255,255,0.08); color: #fff; }
+.navLinkActive      { background: rgba(255,255,255,0.12); color: #fff; }
+
+/* Bottom user area */
+.bottom {
+  padding: 16px 12px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.user { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.userAvatar {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.userName  { font-size: 13px; font-weight: 600; color: #fff; truncate: true; }
+.userRole  { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: capitalize; }
+.logoutBtn {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.45);
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+.logoutBtn:hover { background: rgba(255,255,255,0.1); color: #fff; }

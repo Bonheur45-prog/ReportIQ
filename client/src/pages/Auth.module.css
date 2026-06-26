@@ -1,0 +1,51 @@
+.authPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.authBox {
+  width: 100%;
+  max-width: 420px;
+}
+
+.authLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+.authLogo span { font-size: 28px; }
+.authLogo h1   { font-size: 24px; font-weight: 700; }
+
+.authCard { padding: 32px; }
+
+.authTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.authSub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.form { display: flex; flex-direction: column; gap: 16px; }
+
+.submitBtn { width: 100%; margin-top: 4px; }
+
+.authSwitch {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 20px;
+}
+.authSwitch a { color: var(--navy); font-weight: 600; }
+.authSwitch a:hover { text-decoration: underline; }

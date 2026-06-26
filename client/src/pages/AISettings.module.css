@@ -1,0 +1,55 @@
+.wrap  { display: flex; flex-direction: column; gap: 16px; }
+.title { font-size: 15px; font-weight: 700; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.sub   { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+.visionWarning { color: var(--yellow-text); font-weight: 600; }
+
+.activeRow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.providerList { display: flex; flex-direction: column; gap: 12px; }
+
+.providerCard {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+  transition: border-color 0.15s;
+}
+.providerActive { border-color: var(--navy); background: var(--blue-bg); }
+
+.providerHeader { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.providerName   { font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+.providerDesc   { font-size: 12px; color: var(--text-muted); margin-top: 3px; }
+.providerHint   { font-size: 11px; color: var(--navy); margin-top: 2px; font-weight: 500; }
+
+.activeBadge {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.05em;
+  background: var(--navy); color: #fff;
+  padding: 2px 7px; border-radius: 999px;
+}
+
+.visionBadge {
+  font-size: 11px; font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap; flex-shrink: 0;
+}
+
+.keyRow {
+  display: flex; gap: 8px; align-items: center;
+}
+.keyInput {
+  flex: 1; min-width: 0;
+  padding: 9px 12px;
+  border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+  font-size: 13px; font-family: monospace;
+  background: #fff; color: var(--text);
+  outline: none;
+}
+.keyInput:focus { border-color: var(--navy); }
+
+.testResult {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; padding: 8px 10px; border-radius: var(--radius-sm);
+}
+.testOk   { background: var(--green-bg); color: var(--green-text); }
+.testFail { background: var(--red-bg);   color: var(--red-text); }

@@ -1,0 +1,35 @@
+.page  { max-width: 680px; display: flex; flex-direction: column; gap: 24px; }
+.title { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+
+.section      { display: flex; flex-direction: column; gap: 14px; }
+.sectionTitle { font-size: 15px; font-weight: 700; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+
+.mt { margin-top: 4px; }
+
+.form    { display: flex; flex-direction: column; gap: 14px; }
+.saveBtn { align-self: flex-start; }
+
+/* Drive code box */
+.codeBox     { display: flex; flex-direction: column; gap: 10px; padding: 14px; background: var(--bg); border-radius: var(--radius-sm); }
+.codeHint    { font-size: 13px; color: var(--text-muted); }
+.codeActions { display: flex; gap: 10px; }
+
+/* Plan section */
+.planCurrent { display: flex; align-items: center; gap: 12px; }
+.planName    { font-size: 15px; font-weight: 700; text-transform: capitalize; }
+.planExpiry  { font-size: 12px; color: var(--green-text); background: var(--green-bg); padding: 3px 10px; border-radius: 999px; margin-left: 8px; }
+.expired     { color: var(--red-text); background: var(--red-bg); }
+
+.plansGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.planCard  {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.planCardActive { border-color: var(--navy); background: var(--blue-bg); }
+.planCardName   { font-size: 13px; font-weight: 700; }
+.planCardPrice  { font-size: 14px; font-weight: 700; color: var(--navy); }
+.planCardLimit  { font-size: 11px; color: var(--text-muted); line-height: 1.5; }
+.planCardBtn    { margin-top: 4px; width: 100%; }
+.billingNote    { font-size: 12px; color: var(--text-muted); }
